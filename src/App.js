@@ -5,6 +5,7 @@ import Count from "./components/count/Count";
 import Button from "./components/button/Button";
 import Input from "./components/input/Input";
 import Buttons from "./components/button/Buttons";
+import HookCounter from "./HookCounter";
 
 class App extends React.Component {
     constructor(props) {
@@ -66,6 +67,7 @@ class App extends React.Component {
                 {/*<Button myFunc={this.reset} label={"Reset"}/>*/}
                 {/*<Input onChange={this.inputState}/>*/}
                 <Buttons reset = {this.reset} handler = {this.handler} value = {[1,-1,100,-100]}/>
+                <HookCounter/>
             </div>
         )
     }
